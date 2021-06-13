@@ -24,6 +24,8 @@ Three additional containers are included that handle Composer, NPM, and Artisan 
 - `docker-compose run --rm npm run dev`
 - `docker-compose run --rm artisan migrate` 
 
+DH_HOST=mysql <= (docker container name)
+
 ## Persistent MySQL Storage
 
 By default, whenever you bring down the Docker network, your MySQL data will be removed after the containers are destroyed. If you would like to have persistent data that remains after bringing containers down and back up, do the following:
